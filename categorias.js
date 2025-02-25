@@ -1,5 +1,12 @@
 const categorias = [
     {
+        id: "COMBOS",
+        nome: "COMBOS",
+        cor: "#000000",
+        emoji: "📺",
+        descricao: "Todos os produtos"
+    },
+    {
         id: "Netflix",
         nome: "Netflix",
         cor: "#E50914",
@@ -10,8 +17,29 @@ const categorias = [
         id: "Paramount",
         nome: "Paramount",
         cor: "#FF0000",
-        emoji: "🎮",
+        emoji: "📺",
         descricao: "Serviços de games"
+    },
+    {
+        id: "DisneyPlus",
+        nome: "Disney +Star Plus",
+        cor: "#000000",
+        emoji: "📺",
+        descricao: "Todos os produtos"
+    },
+    {
+        id: "Hbomax",
+        nome: "HBOMAX",
+        cor: "#000000",
+        emoji: "📺",
+        descricao: "Todos os produtos"
+    },
+    {
+        id: "Crunchyroll",
+        nome: "Crunchyroll",
+        cor: "#000000",
+        emoji: "📺",
+        descricao: "Todos os produtos"
     }
 ];
 

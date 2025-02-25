@@ -1,5 +1,5 @@
-const AUMENTO_GLOBAL = .29; // Valor do aumento em reais
-const AUMENTO_PORCENTAGEM = 0; // Aumento em porcentagem (0 = sem aumento percentual)
+const AUMENTO_GLOBAL = 3.70; // Valor do aumento em reais
+const AUMENTO_PORCENTAGEM = 20; // Aumento em porcentagem (0 = sem aumento percentual)
 
 // Função auxiliar para calcular preço com aumento
 function calcularPrecoComAumento(precoBase) {
@@ -61,7 +61,7 @@ const produtos = {
             "nome": "Paramount Plus - TELA PRIVADA (30 dias de uso)",
             "emoji": "📺",
             "preco": calcularPrecoComAumento(2.99),
-            "estoque": 13,
+            "estoque": 12,
             "descricao": "Acesso a uma tela individual. Pode colocar o seu nome na tela."
         },
         {
@@ -71,22 +71,55 @@ const produtos = {
             "preco": calcularPrecoComAumento(7.99),
             "estoque": 9,
             "descricao": "Acesso completo a conta Paramount Plus. Todos os perfis são seus."
-        },
+        }
+    ],
+
+    DisneyPlus: [
         {
             "id": 7,
-            "nome": "(PROMOÇÃO) Paramount Plus +",
-            "emoji": "🎉",
-            "preco": calcularPrecoComAumento(2.00),
-            "estoque": 100,  // Ajuste conforme necessário
-            "descricao": "Acesso a uma tela individual, pode colocar o seu nome na tela."
+            "nome": "Disney + Star Plus (Compartilhada) + Brinde [1 Mês]",
+            "emoji": "🎬",
+            "preco": calcularPrecoComAumento(3.99),
+            "estoque": 33,
+            "descricao": "Acesso a conta compartilhada com perfil público. Inclui brinde de 1 mês."
         },
         {
             "id": 8,
-            "nome": "(PROMOÇÃO) Paramount Plus + CONTA COMPLETA",
-            "emoji": "💎",
-            "preco": calcularPrecoComAumento(4.00),
-            "estoque": 100,  // Ajuste conforme necessário
-            "descricao": "Acesso completo a todos os perfis."
+            "nome": "Disney + Star Plus (Tela Privada) + Brinde [1 Mês]",
+            "emoji": "🎥",
+            "preco": calcularPrecoComAumento(6.99),
+            "estoque": 33,
+            "descricao": "Acesso a conta com perfil exclusivo protegido por PIN. Inclui brinde de 1 mês."
+        }
+    ],
+
+    Hbomax: [
+        {
+            "id": 9,
+            "nome": "HBOMAX TELA PRIVADA + PIN (STANDARD)",
+            "emoji": "💖",
+            "preco": calcularPrecoComAumento(2.50),
+            "estoque": 54,
+            "descricao": "Plano Standard Full HD. Até 2 dispositivos simultâneos. 1 perfil por usuário. Pode dar tela cheia, sem reembolso caso ocorra."
+        },
+        {
+            "id": 10,
+            "nome": "HBOMAX CONTA PRIVADA NO MEU EMAIL (STANDARD)",
+            "emoji": "⭐",
+            "preco": calcularPrecoComAumento(4.20),
+            "estoque": 30,
+            "descricao": "Plano Standard Full HD. Até 2 dispositivos simultâneos. Conta privada, apenas você na conta. Garantia de 30 dias."
+        }
+    ],
+    Crunchyroll: [
+        {
+            "id": 11,
+            "nome": "Crunchyroll Mega Fan 30 Dias + CANVA (Brinde)",
+            "emoji": "⚡",
+            "preco": calcularPrecoComAumento(2.00),
+            "estoque": 8,
+            "descricao": "Conta compartilhada com o plano Mega Fan, garantia de 30 dias de funcionamento. Acesso a mais de 20.000 conteúdos de mangás e animes. Brinde: Canva. Proibido trocar a senha."
         }
     ]
+    
 }; 
